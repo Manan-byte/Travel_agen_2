@@ -206,9 +206,9 @@
                     </div>
                     <!-- Image Gallery -->
                     <div class="relative h-[28rem] mt-12 md:mt-0">
-                        <img src="https://picsum.photos/seed/family/600/800" alt="Keluarga Bahagia" class="gallery-image absolute top-0 left-0 w-2/3 rounded-2xl shadow-xl transform -rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500">
-                        <img src="https://picsum.photos/seed/scenic/600/400" alt="Destinasi Indah" class="gallery-image absolute bottom-0 right-0 w-1/2 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
-                        <img src="https://picsum.photos/seed/driver/400/400" alt="Driver Ramah" class="gallery-image absolute top-1/4 right-1/4 w-1/3 rounded-full shadow-xl transform hover:scale-110 transition-transform duration-500 border-4 border-white">
+                        <img src="data/bali 2.png" alt="Keluarga Bahagia" class="gallery-image absolute top-0 left-0 w-2/3 rounded-2xl shadow-xl transform -rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500">
+                        <img src="data/borobudur 3.jpg" alt="Destinasi Indah" class="gallery-image absolute bottom-0 right-0 w-1/2 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
+                        <img src="data/Bromo 1.jpg" alt="Driver Ramah" class="gallery-image absolute top-1/4 right-1/4 w-1/3 rounded-full shadow-xl transform hover:scale-110 transition-transform duration-500 border-4 border-white">
                     </div>
                 </div>
             </div>
@@ -537,7 +537,7 @@
                                 Punya pertanyaan atau sudah siap memesan tiket petualanganmu? Tim kami siap sedia membantu. Cukup klik tombol di bawah ini!
                             </p>
                             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                <a href="https://wa.me/62882001753186" target="_blank" class="w-full sm:w-auto bg-green-500 text-white font-bold px-6 py-3 rounded-full text-lg shadow-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 flex items-center justify-center">
+                                <a href="https://wa.link/w0jfqg" target="_blank" class="w-full sm:w-auto bg-green-500 text-white font-bold px-6 py-3 rounded-full text-lg shadow-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.505 1.905 6.344l-1.196 4.354 4.463-1.164z"/></svg>
                                     Chat di WhatsApp
                                 </a>
@@ -849,8 +849,9 @@
         }
 
         async function callGemini(prompt) {
-            const apiKey = ""; // Ganti dengan API Key Anda. Biarkan kosong jika lingkungan sudah menyediakannya.
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            const encodedApiKey = "QUl6YVN5QUVYeFFiZW1iQnlPNzRWUWViN0NHb3FWTlBubzhuNDd3";
+                const apiKey = atob(encodedApiKey);            
+             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
             const payload = {
                 contents: [{ parts: [{ text: prompt }] }],

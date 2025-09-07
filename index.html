@@ -4,157 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abiem Trans - Agen Travel Modern & Menyenangkan</title>
+    
     <!-- SEO & Meta Tags for Social Sharing -->
     <meta name="description" content="Perjalanan seru dan bebas ribet bersama Abiem Trans. Kami menyediakan layanan travel, carter, pariwisata, dan tour dengan armada nyaman dan driver profesional.">
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://travelabiemtrans.netlify.app/">
     <meta property="og:title" content="Abiem Trans - Agen Travel Modern & Menyenangkan">
     <meta property="og:description" content="Perjalanan seru dan bebas ribet bersama Abiem Trans. Kami menyediakan layanan travel, carter, pariwisata, dan tour dengan armada nyaman dan driver profesional.">
     <meta property="og:image" content="https://www.asuransiku.id/support/images/upload-photos/article/artikel3-bisnis-travel-besar.png?w=650">
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://travelabiemtrans.netlify.app/">
     <meta property="twitter:title" content="Abiem Trans - Agen Travel Modern & Menyenangkan">
     <meta property="twitter:description" content="Perjalanan seru dan bebas ribet bersama Abiem Trans. Kami menyediakan layanan travel, carter, pariwisata, dan tour dengan armada nyaman dan driver profesional.">
     <meta property="twitter:image" content="https://www.asuransiku.id/support/images/upload-photos/article/artikel3-bisnis-travel-besar.png?w=650">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle fill='%239333EA' cx='32' cy='32' r='32'/%3E%3Cpath d='M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z' fill='%23FFF'/%3E%3Cpath d='M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z' fill='%23E9D5FF'/%3E%3Crect fill='%23FFF' x='18' y='16' width='28' height='8' rx='2'/%3E%3Ccircle fill='%231F2937' cx='20' cy='42' r='6'/%3E%3Ccircle fill='%23FFF' cx='20' cy='42' r='2'/%3E%3Ccircle fill='%231F2937' cx='44' cy='42' r='6'/%3E%3Ccircle fill='%23FFF' cx='44' cy='42' r='2'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle fill='%230891B2' cx='32' cy='32' r='32'/%3E%3Cpath d='M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z' fill='%23FFF'/%3E%3Cpath d='M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z' fill='%23CFFAFE'/%3E%3Crect fill='%23FFF' x='18' y='16' width='28' height='8' rx='2'/%3E%3Ccircle fill='%231F2937' cx='20' cy='42' r='6'/%3E%3Ccircle fill='%23FFF' cx='20' cy='42' r='2'/%3E%3Ccircle fill='%231F2937' cx='44' cy='42' r='6'/%3E%3Ccircle fill='%23FFF' cx='44' cy='42' r='2'/%3E%3C/g%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playpen+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F9FF; /* light blue bg */
         }
-        .hero-bg {
-            background-color: #FAF5FF; /* Light Purple */
+        .font-brand {
+            font-family: 'Playpen Sans', cursive;
         }
-        .bouncy-icon {
-            animation: bounce 2s infinite;
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            60% {
-                transform: translateY(-10px);
-            }
-        }
-        #hero-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            cursor: grab;
-        }
-        /* Universal transition class for scroll animations */
         .scroll-animate {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
         .scroll-animate.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
-        /* Custom transition for gallery to allow hover effects */
-        .gallery-image {
-             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230E7490' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-        .gallery-image.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Styling for the Prose class from Tailwind Typography, for Gemini results */
-        .prose ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .prose li {
-            padding-left: 2em;
-            position: relative;
-            margin-bottom: 1em;
-        }
-        .prose li::before {
-            content: '✨';
-            position: absolute;
-            left: 0;
-            top: 0.1em;
-        }
-        .prose strong {
-            font-weight: 600;
-            color: #6B21A8; /* Purple-800 */
-        }
-        
-        /* Illustration Animations */
-        #animated-van {
-            animation: bobbing 3s ease-in-out infinite;
-        }
-        .animated-wheel {
-            animation: spin 2s linear infinite;
-        }
-        #animated-sun {
-            animation: spin 20s linear infinite, pulse 4s ease-in-out infinite alternate;
-            transform-origin: center;
-        }
+        .prose ul { list-style-type: none; padding-left: 0; }
+        .prose li { padding-left: 2em; position: relative; margin-bottom: 1em; }
+        .prose li::before { content: '✈️'; position: absolute; left: 0; top: 0.1em; }
+        .prose strong { font-weight: 600; color: #0891B2; /* Cyan-600 */ }
+
+        #van-illustration { animation: bobbing 4s ease-in-out infinite; }
 
         @keyframes bobbing {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1deg); }
         }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+
+        .polaroid {
+            position: absolute;
+            background: white;
+            padding: 0.75rem;
+            padding-bottom: 2.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-radius: 0.25rem;
+            animation: float 10s ease-in-out infinite;
+            z-index: 0;
         }
-        @keyframes pulse {
-            from { transform: scale(1); }
-            to { transform: scale(1.05); }
+        .polaroid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(-5deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(-5deg); }
+        }
+
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="text-slate-800">
 
     <!-- Header / Navigation -->
-    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="glassmorphism sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
-                <svg class="h-10 w-10 text-purple-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" fill-rule="evenodd">
-                        <circle fill="#9333EA" cx="32" cy="32" r="32"/>
-                        <path d="M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z" fill="#FFF"/>
-                        <path d="M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z" fill="#E9D5FF"/>
-                        <rect fill="#FFF" x="18" y="16" width="28" height="8" rx="2"/>
-                        <circle fill="#1F2937" cx="20" cy="42" r="6"/>
-                        <circle fill="#FFF" cx="20" cy="42" r="2"/>
-                        <circle fill="#1F2937" cx="44" cy="42" r="6"/>
-                        <circle fill="#FFF" cx="44" cy="42" r="2"/>
-                        <path d="M30 32c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zM22 32c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z" fill="#7E22CE"/>
-                        <path d="M38 34c-1.33 0-2.5.84-2.9 2h-6.2c-.4-1.16-1.57-2-2.9-2-1.66 0-3 1.34-3 3s1.34 3 3 3h12c1.66 0 3-1.34 3-3s-1.34-3-3-3z" fill="#7E22CE" fill-rule="nonzero"/>
-                    </g>
-                </svg>
-                <span class="text-2xl font-bold text-purple-600">Abiem Trans</span>
+                 <svg class="h-10 w-10 text-cyan-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#0891B2" cx="32" cy="32" r="32"/><path d="M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z" fill="#FFF"/><path d="M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z" fill="#CFFAFE"/><rect fill="#FFF" x="18" y="16" width="28" height="8" rx="2"/><circle fill="#1F2937" cx="20" cy="42" r="6"/><circle fill="#FFF" cx="20" cy="42" r="2"/><circle fill="#1F2937" cx="44" cy="42" r="6"/><circle fill="#FFF" cx="44" cy="42" r="2"/></g></svg>
+                 <span class="text-2xl font-bold text-cyan-700 font-brand">Abiem Trans</span>
             </a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="#tentang" class="text-gray-600 hover:text-purple-500 transition duration-300">Tentang</a>
-                <a href="#layanan" class="text-gray-600 hover:text-purple-500 transition duration-300">Layanan</a>
-                <a href="#armada" class="text-gray-600 hover:text-purple-500 transition duration-300">Armada</a>
-                <a href="#rute" class="text-gray-600 hover:text-purple-500 transition duration-300">Rute</a>
-                <a href="#kontak" class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition duration-300 shadow">Hubungi Kami</a>
+            <div class="hidden md:flex space-x-8 items-center font-medium">
+                <a href="#tentang" class="text-slate-600 hover:text-cyan-600 transition duration-300">Tentang</a>
+                <a href="#layanan" class="text-slate-600 hover:text-cyan-600 transition duration-300">Layanan</a>
+                <a href="#armada" class="text-slate-600 hover:text-cyan-600 transition duration-300">Armada</a>
+                <a href="#rute" class="text-slate-600 hover:text-cyan-600 transition duration-300">Rute</a>
+                <a href="#kontak" class="bg-cyan-500 text-white px-5 py-2 rounded-full hover:bg-cyan-600 transition duration-300 shadow-md shadow-cyan-500/20">Hubungi Kami</a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden">
+            <button id="mobile-menu-button" class="md:hidden text-slate-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -162,229 +112,206 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#tentang" class="block py-2 text-gray-600 hover:text-purple-500">Tentang Kami</a>
-            <a href="#layanan" class="block py-2 text-gray-600 hover:text-purple-500">Layanan</a>
-            <a href="#armada" class="block py-2 text-gray-600 hover:text-purple-500">Armada</a>
-            <a href="#rute" class="block py-2 text-gray-600 hover:text-purple-500">Rute</a>
-            <a href="#kontak" class="block mt-2 bg-purple-500 text-white text-center px-4 py-2 rounded-full hover:bg-purple-600">Hubungi Kami</a>
+            <a href="#tentang" class="block py-2 text-slate-600 hover:text-cyan-600">Tentang Kami</a>
+            <a href="#layanan" class="block py-2 text-slate-600 hover:text-cyan-600">Layanan</a>
+            <a href="#armada" class="block py-2 text-slate-600 hover:text-cyan-600">Armada</a>
+            <a href="#rute" class="block py-2 text-slate-600 hover:text-cyan-600">Rute</a>
+            <a href="#kontak" class="block mt-2 bg-cyan-500 text-white text-center px-4 py-2 rounded-full hover:bg-cyan-600">Hubungi Kami</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero-bg pt-20 pb-32 relative overflow-hidden">
-            <canvas id="hero-canvas"></canvas>
-            <div class="container mx-auto px-6 text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-                    Perjalanan Seru & Bebas Ribet Dimulai Dari Sini!
-                </h1>
-                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                    Bersama Abiem Trans, setiap perjalanan adalah petualangan baru yang menyenangkan. Kami siap mengantar Anda ke destinasi impian dengan aman dan nyaman.
-                </p>
-                <a href="#kontak" class="mt-8 inline-block bg-pink-500 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-pink-600 transform hover:scale-105 transition duration-300">
-                    Pesan Sekarang!
-                </a>
-                <div class="mt-12 flex justify-center bouncy-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 12.586l-4.293-4.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l5-5a1 1 0 00-1.414-1.414L10 12.586z" clip-rule="evenodd" />
-                    </svg>
+        <section class="relative pt-24 pb-20 md:pt-28 md:pb-28 overflow-hidden bg-gradient-to-br from-cyan-50 via-rose-50 to-amber-50">
+            <!-- Decorative Photos -->
+            <div class="hidden lg:block">
+                <div class="polaroid w-40 top-20 left-10 transform -rotate-12">
+                     <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=400&auto=format&fit=crop" alt="Pemandangan gunung">
+                </div>
+                 <div class="polaroid w-32 bottom-24 left-1/4 transform rotate-6" style="animation-delay: 2s;">
+                     <img src="https://images.unsplash.com/photo-1507525428034-b723a996f6ea?w=400&auto=format&fit=crop" alt="Pantai tropis">
+                </div>
+                 <div class="polaroid w-48 top-24 right-10 transform rotate-12" style="animation-delay: 4s;">
+                    <img src="https://images.unsplash.com/photo-1480714378408-6824e4d758b5?w=400&auto=format&fit=crop" alt="Pemandangan kota di malam hari">
+                </div>
+                <div class="polaroid w-36 bottom-20 right-1/4 transform -rotate-8" style="animation-delay: 6s;">
+                    <img src="https://images.unsplash.com/photo-1511527661048-75a5d022d222?w=400&auto=format&fit=crop" alt="Jalanan kota yang sibuk">
+                </div>
+                 <div class="polaroid w-32 top-10 right-1/3 transform rotate-10" style="animation-delay: 1s;">
+                    <img src="https://images.unsplash.com/photo-1522878129833-23f99a589d82?w=400&auto=format&fit=crop" alt="Orang bahagia saat travelling">
+                </div>
+                 <div class="polaroid w-36 bottom-40 left-5 transform rotate-3" style="animation-delay: 5s;">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&auto=format&fit=crop" alt="Danau yang indah">
+                </div>
+            </div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                 <div class="scroll-animate">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                        <span class="font-brand text-cyan-600">Jalan-Jalan Asyik,</span> Tanpa Bikin Pusing!
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
+                        Biarkan Abiem Trans jadi teman petualanganmu. Kami antar kamu ke destinasi impian dengan nyaman, aman, dan pastinya penuh senyuman.
+                    </p>
+                    <a href="#kontak" class="mt-8 inline-block bg-pink-500 text-white font-bold px-8 py-4 rounded-full text-lg shadow-xl shadow-pink-500/30 hover:bg-pink-600 transform hover:scale-105 transition duration-300">
+                        Pesan Perjalananmu ✨
+                    </a>
+                </div>
+                <div class="relative mt-12 scroll-animate" style="animation-delay: 0.2s;">
+                    <div id="van-illustration" class="w-full max-w-xs sm:max-w-sm mx-auto">
+                        <!-- Ilustrasi Sederhana dan Kecil -->
+                        <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,110 H190" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+                            <path d="M30,50 C30,30 50,30 60,30 L140,30 C150,30 170,30 170,50 L170,100 L30,100 Z" fill="#22D3EE" stroke="#0891B2" stroke-width="3" />
+                            <rect x="90" y="50" width="65" height="40" fill="#F0F9FF" rx="5" />
+                            <rect x="45" y="50" width="30" height="40" fill="#F0F9FF" rx="5" />
+                            <circle cx="55" cy="100" r="12" fill="#334155" />
+                            <circle cx="55" cy="100" r="6" fill="#F8FAFC" />
+                            <circle cx="145" cy="100" r="12" fill="#334155" />
+                            <circle cx="145" cy="100" r="6" fill="#F8FAFC" />
+                            <rect x="70" y="15" width="60" height="15" rx="5" fill="#f472b6" />
+                            <rect x="80" y="10" width="40" height="5" rx="2" fill="#db2777" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Tentang Kami Section -->
-        <section id="tentang" class="py-20 bg-white overflow-hidden">
+        <section id="tentang" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-2 gap-16 items-center">
-                    <!-- Text Content -->
                     <div class="scroll-animate">
-                        <span class="text-purple-500 font-semibold">Kenalan Yuk!</span>
-                        <h2 class="text-3xl md:text-4xl font-bold mt-2">Kenapa Abiem Trans Jadi Teman Jalan Terbaikmu?</h2>
-                        <p class="mt-4 text-gray-600">Kami bukan sekadar travel agent biasa. Anggap saja kami teman petualanganmu! Di Abiem Trans, kami percaya setiap perjalanan punya cerita. Misi kami adalah membuat ceritamu seru, nyaman, dan tak terlupakan dari awal sampai akhir.</p>
-                        <div class="mt-8 space-y-4">
+                        <span class="text-cyan-500 font-semibold">Kenalan Yuk!</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-900">Kenapa Abiem Trans Jadi Teman Jalan Terbaikmu?</h2>
+                        <p class="mt-4 text-slate-600">Kami bukan sekadar agen travel. Anggap kami teman petualanganmu! Di Abiem Trans, setiap perjalanan punya cerita. Misi kami adalah membuat ceritamu seru, nyaman, dan tak terlupakan.</p>
+                        <div class="mt-8 space-y-6">
                             <div class="flex items-start">
-                                <div class="bg-green-100 text-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <div class="bg-emerald-100 text-emerald-500 p-3 rounded-full mr-4 flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg">Perjalanan Penuh Canda Tawa</h3>
-                                    <p class="text-gray-600">Driver kami bukan cuma jago nyetir, tapi juga asyik diajak ngobrol. Siap-siap perjalanan jadi lebih hidup!</p>
+                                    <h3 class="font-bold text-lg text-slate-800">Perjalanan Penuh Canda Tawa</h3>
+                                    <p class="text-slate-600">Driver kami bukan cuma jago nyetir, tapi juga asyik diajak ngobrol. Siap-siap perjalanan jadi lebih hidup!</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <div class="bg-yellow-100 text-yellow-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <div class="bg-amber-100 text-amber-500 p-3 rounded-full mr-4 flex-shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg">Anti Ngaret, Anti Ribet</h3>
-                                    <p class="text-gray-600">Kami hargai waktumu. Jadwal penjemputan yang pas dan proses booking yang super gampang.</p>
+                                    <h3 class="font-bold text-lg text-slate-800">Anti Ngaret, Anti Ribet</h3>
+                                    <p class="text-slate-600">Kami hargai waktumu. Jadwal penjemputan yang pas dan proses booking yang super gampang.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Image Gallery -->
-                    <div class="relative h-[28rem] mt-12 md:mt-0">
-                        <img src="data/bali 2.png" alt="Keluarga Bahagia" class="gallery-image absolute top-0 left-0 w-2/3 rounded-2xl shadow-xl transform -rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500">
-                        <img src="data/borobudur 3.jpg" alt="Destinasi Indah" class="gallery-image absolute bottom-0 right-0 w-1/2 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
-                        <img src="data/Bromo 1.jpg" alt="Driver Ramah" class="gallery-image absolute top-1/4 right-1/4 w-1/3 rounded-full shadow-xl transform hover:scale-110 transition-transform duration-500 border-4 border-white">
+                     <div class="scroll-animate relative mt-12 md:mt-0">
+                        <img src="https://placehold.co/600x450/0891B2/FFFFFF?text=Abiem+Trans&font=playpen-sans" alt="Tim Abiem Trans yang ceria" class="rounded-3xl shadow-2xl shadow-cyan-500/20 w-full">
+                        <div class="absolute -bottom-8 -right-8 glassmorphism p-6 rounded-2xl w-2/3 border border-white/20">
+                            <p class="font-bold text-slate-800">"Perjalanan paling seru selama ini! Drivernya ramah banget, mobilnya nyaman. Recommended!"</p>
+                            <p class="text-sm text-slate-600 mt-2">- Pelanggan Bahagia</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Layanan Section (Redesigned & Merged) -->
-        <section id="layanan" class="py-20 bg-gray-50">
+        <!-- Layanan Section -->
+        <section id="layanan" class="py-24 hero-pattern">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                     <span class="text-purple-500 font-semibold">Semua Untuk Anda</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Layanan Lengkap Abiem Trans</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Dari perjalanan rutin hingga kebutuhan spesial, kami punya solusinya.</p>
+                    <span class="text-cyan-500 font-semibold">Semua Untuk Anda</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-900">Layanan Lengkap untuk Semua Kebutuhan</h2>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Dari perjalanan rutin hingga liburan spesial, kami punya solusi yang pas buat kamu.</p>
                 </div>
 
-                <!-- Tab Buttons -->
-                <div class="flex justify-center mb-8">
-                    <div class="bg-gray-200 rounded-full p-1 flex space-x-1">
-                        <button data-tab="harian" class="tab-btn bg-white text-purple-600 px-6 py-2 rounded-full font-semibold transition-all duration-300">Perjalanan Harian</button>
-                        <button data-tab="khusus" class="tab-btn text-gray-600 px-6 py-2 rounded-full font-semibold transition-all duration-300">Kebutuhan Khusus</button>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-cyan-400">
+                        <div class="text-5xl mb-4">🚐</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Travel Reguler (Door to Door)</h3>
+                        <p class="text-slate-600">Layanan antar jemput harian ke berbagai kota tujuan. Praktis dijemput & diantar langsung ke depan pintu.</p>
                     </div>
-                </div>
-
-                <!-- Tab Content -->
-                <div>
-                    <!-- Tab Panel Harian -->
-                    <div id="tab-harian" class="tab-panel grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                         <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-purple-400">
-                            <div class="text-5xl mb-4">🏠</div>
-                            <h3 class="text-xl font-bold mb-2">Antar Jemput Door to Door</h3>
-                            <p class="text-gray-600">Praktis dijemput & diantar langsung ke depan pintu, tanpa repot.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-green-400">
-                            <div class="text-5xl mb-4">💰</div>
-                            <h3 class="text-xl font-bold mb-2">Harga Terjangkau</h3>
-                            <p class="text-gray-600">Kualitas premium dengan harga yang ramah di kantong.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-yellow-400">
-                             <div class="text-5xl mb-4">✨</div>
-                            <h3 class="text-xl font-bold mb-2">Armada Nyaman & Terawat</h3>
-                            <p class="text-gray-600">AC dingin, kabin bersih, dan suspensi empuk. Perjalanan jadi nyaman.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-red-400">
-                            <div class="text-5xl mb-4">😎</div>
-                            <h3 class="text-xl font-bold mb-2">Driver Profesional</h3>
-                            <p class="text-gray-600">Driver kami ramah, berpengalaman, dan siap jadi teman ngobrol.</p>
-                        </div>
+                     <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-pink-400">
+                        <div class="text-5xl mb-4">🔑</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Carter / Sewa Mobil</h3>
+                        <p class="text-slate-600">Sewa satu mobil penuh untuk kebutuhan pribadi, keluarga, atau bisnis (Drop, PP, atau harian).</p>
                     </div>
-                     <!-- Tab Panel Khusus -->
-                    <div id="tab-khusus" class="tab-panel hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                         <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-purple-400">
-                            <div class="text-5xl mb-4">➡️</div>
-                            <h3 class="text-xl font-bold mb-2">Carter Drop</h3>
-                            <p class="text-gray-600">Layanan antar satu arah ke tujuan Anda dengan waktu fleksibel.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-pink-400">
-                            <div class="text-5xl mb-4">↔️</div>
-                            <h3 class="text-xl font-bold mb-2">Carter PP (Pulang-Pergi)</h3>
-                            <p class="text-gray-600">Cocok untuk perjalanan bisnis atau keluarga di hari yang sama.</p>
-                        </div>
-                         <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-teal-400">
-                            <div class="text-5xl mb-4">🚌</div>
-                            <h3 class="text-xl font-bold mb-2">Pelayanan Pariwisata</h3>
-                            <p class="text-gray-600">Armada khusus untuk liburan keluarga atau rombongan sekolah.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-indigo-400">
-                            <div class="text-5xl mb-4">🕌</div>
-                            <h3 class="text-xl font-bold mb-2">Pelayanan Ziarah</h3>
-                            <p class="text-gray-600">Mengantar ke lokasi-lokasi spiritual dan makam wali dengan khidmat.</p>
-                        </div>
-                        <div class="scroll-animate bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-orange-400">
-                            <div class="text-5xl mb-4">🗺️</div>
-                            <h3 class="text-xl font-bold mb-2">Pelayanan Tour</h3>
-                            <p class="text-gray-600">Menjelajahi destinasi menarik di Jawa Barat dan sekitarnya.</p>
-                        </div>
+                    <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-amber-400">
+                        <div class="text-5xl mb-4">🏞️</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Tour & Pariwisata</h3>
+                        <p class="text-slate-600">Rencanakan liburan serumu bersama rombongan dengan armada khusus pariwisata.</p>
+                    </div>
+                    <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-emerald-400">
+                        <div class="text-5xl mb-4">🕌</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Pelayanan Ziarah</h3>
+                        <p class="text-slate-600">Mengantar rombongan ke lokasi-lokasi spiritual dan makam wali dengan aman dan khidmat.</p>
+                    </div>
+                     <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-indigo-400">
+                        <div class="text-5xl mb-4">😎</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Driver Profesional</h3>
+                        <p class="text-slate-600">Driver kami ramah, berpengalaman, dan siap menjadi teman ngobrol yang asyik selama perjalanan.</p>
+                    </div>
+                     <div class="scroll-animate glassmorphism p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300 border-t-4 border-rose-400">
+                        <div class="text-5xl mb-4">💰</div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Harga Terjangkau</h3>
+                        <p class="text-slate-600">Kami menawarkan kualitas pelayanan premium dengan harga yang tetap ramah di kantong Anda.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Armada Section -->
-        <section id="armada" class="py-20 bg-white relative overflow-hidden">
-            <!-- Subtle background pattern -->
-            <div class="absolute inset-0 z-0 opacity-5">
-                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M5 5h30v30H5z" fill="#000" fill-opacity="0.05"/></pattern></defs><rect width="100%" height="100%" fill="url(#a)"/></svg>
-            </div>
-            <div class="container mx-auto px-6 relative z-10">
+        <section id="armada" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <span class="text-purple-500 font-semibold">Pilih Kendaraanmu</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Armada Keren Siap Meluncur</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Setiap mobil kami adalah jaminan kenyamanan. Bersih, wangi, dan pastinya super nyaman untuk setiap petualanganmu.</p>
+                    <span class="text-cyan-500 font-semibold">Pilih Kendaraanmu</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-900">Armada Keren Siap Meluncur</h2>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Setiap mobil kami adalah jaminan kenyamanan. Bersih, wangi, dan pastinya super nyaman untuk setiap petualanganmu.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Armada Card 1 -->
-                    <div class="scroll-animate group bg-gradient-to-br from-purple-50 to-indigo-100 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                        <div class="p-6">
-                            <img src="data/mobil/New_Avanza.png" alt="Toyota Avanza" class="w-full h-40 object-cover rounded-xl shadow-md transform group-hover:scale-105 transition-transform duration-300">
-                        </div>
+                    <div class="scroll-animate group bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col border border-slate-100">
+                        <div class="p-6"><img src="data/mobil/New_Avanza.png" alt="Toyota Avanza" class="w-full h-40 object-contain rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
                         <div class="p-6 pt-0 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Avanza / Xenia</h3>
-                            <p class="text-gray-600 text-sm flex-grow">Ideal untuk perjalanan keluarga atau grup kecil yang dinamis.</p>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Avanza / Xenia</h3>
+                            <p class="text-slate-600 text-sm flex-grow">Ideal untuk perjalanan keluarga atau grup kecil yang dinamis.</p>
                             <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
-                                <span class="text-lg font-bold text-gray-900">Rp600rb<span class="text-sm font-normal text-gray-500">/hari</span></span>
-                                <div class="inline-flex items-center bg-purple-200 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-                                    5-6
-                                </div>
+                                <span class="text-lg font-bold text-slate-900">Rp600rb<span class="text-sm font-normal text-slate-500">/hari</span></span>
+                                <div class="inline-flex items-center bg-cyan-100 text-cyan-800 text-sm font-semibold px-3 py-1 rounded-full">5-6 Orang</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Armada Card 2 -->
-                    <div class="scroll-animate group bg-gradient-to-br from-pink-50 to-rose-100 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                        <div class="p-6">
-                            <img src="data/mobil/innova.png" alt="Innova Reborn" class="w-full h-40 object-cover rounded-xl shadow-md transform group-hover:scale-105 transition-transform duration-300">
-                        </div>
+                    <div class="scroll-animate group bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col border border-slate-100">
+                        <div class="p-6"><img src="data/mobil/innova.png" alt="Innova Reborn" class="w-full h-40 object-contain rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
                         <div class="p-6 pt-0 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Innova Reborn</h3>
-                            <p class="text-gray-600 text-sm flex-grow">Nikmati kenyamanan ekstra untuk perjalanan jauh yang lebih berkesan.</p>
-                             <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
-                                <span class="text-lg font-bold text-gray-900">Rp850rb<span class="text-sm font-normal text-gray-500">/hari</span></span>
-                                <div class="inline-flex items-center bg-rose-200 text-rose-800 text-sm font-semibold px-3 py-1 rounded-full">
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-                                    6-7
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Armada Card 3 -->
-                    <div class="scroll-animate group bg-gradient-to-br from-blue-50 to-sky-100 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                        <div class="p-6">
-                            <img src="data/mobil/Toyota-Hiace.png" alt="Toyota Hiace" class="w-full h-40 object-cover rounded-xl shadow-md transform group-hover:scale-105 transition-transform duration-300">
-                        </div>
-                        <div class="p-6 pt-0 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Hiace</h3>
-                            <p class="text-gray-600 text-sm flex-grow">Pilihan tepat untuk rombongan, gathering, atau liburan bareng tim.</p>
-                             <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
-                                <span class="text-lg font-bold text-gray-900">Rp1,2jt<span class="text-sm font-normal text-gray-500">/hari</span></span>
-                                <div class="inline-flex items-center bg-sky-200 text-sky-800 text-sm font-semibold px-3 py-1 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-                                    10-12
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Armada Card 4 -->
-                    <div class="scroll-animate group bg-gradient-to-br from-emerald-50 to-green-100 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                        <div class="p-6">
-                           <img src="data/mobil/Elf-Long-200px.png" alt="Elf Long" class="w-full h-40 object-cover rounded-xl shadow-md transform group-hover:scale-105 transition-transform duration-300">
-                        </div>
-                        <div class="p-6 pt-0 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Elf Long</h3>
-                            <p class="text-gray-600 text-sm flex-grow">Solusi terbaik untuk membawa seluruh pasukan dalam satu perjalanan.</p>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Innova Reborn</h3>
+                            <p class="text-slate-600 text-sm flex-grow">Nikmati kenyamanan ekstra untuk perjalanan jauh yang lebih berkesan.</p>
                             <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
-                                <span class="text-lg font-bold text-gray-900">Rp1,5jt<span class="text-sm font-normal text-gray-500">/hari</span></span>
-                                <div class="inline-flex items-center bg-green-200 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-                                    12-15
-                                </div>
+                                <span class="text-lg font-bold text-slate-900">Rp850rb<span class="text-sm font-normal text-slate-500">/hari</span></span>
+                                <div class="inline-flex items-center bg-cyan-100 text-cyan-800 text-sm font-semibold px-3 py-1 rounded-full">6-7 Orang</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-animate group bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col border border-slate-100">
+                        <div class="p-6"><img src="data/mobil/Toyota-Hiace.png" alt="Toyota Hiace" class="w-full h-40 object-contain rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                        <div class="p-6 pt-0 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Toyota Hiace</h3>
+                            <p class="text-slate-600 text-sm flex-grow">Pilihan tepat untuk rombongan, gathering, atau liburan bareng tim.</p>
+                            <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
+                                <span class="text-lg font-bold text-slate-900">Rp1,2jt<span class="text-sm font-normal text-slate-500">/hari</span></span>
+                                <div class="inline-flex items-center bg-cyan-100 text-cyan-800 text-sm font-semibold px-3 py-1 rounded-full">10-12 Orang</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-animate group bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 flex flex-col border border-slate-100">
+                        <div class="p-6"><img src="data/mobil/Elf-Long-200px.png" alt="Elf Long" class="w-full h-40 object-contain rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                        <div class="p-6 pt-0 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Elf Long</h3>
+                            <p class="text-slate-600 text-sm flex-grow">Solusi terbaik untuk membawa seluruh pasukan dalam satu perjalanan.</p>
+                            <div class="mt-4 flex flex-wrap justify-between items-center gap-2">
+                                <span class="text-lg font-bold text-slate-900">Rp1,5jt<span class="text-sm font-normal text-slate-500">/hari</span></span>
+                                <div class="inline-flex items-center bg-cyan-100 text-cyan-800 text-sm font-semibold px-3 py-1 rounded-full">12-15 Orang</div>
                             </div>
                         </div>
                     </div>
@@ -393,281 +320,144 @@
         </section>
         
         <!-- Rute Section -->
-        <section id="rute" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
+        <section id="rute" class="py-24 hero-pattern">
+             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <span class="text-purple-500 font-semibold">Jelajahi Rute Kami</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Destinasi Favorit Abiem Trans</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Dari hiruk pikuk kota besar hingga ketenangan alam, kami siap mengantar Anda ke berbagai tujuan populer dari Cirebon.</p>
+                    <span class="text-cyan-500 font-semibold">Jelajahi Rute Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-900">Destinasi Favorit dari Cirebon</h2>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Kami siap mengantar Anda ke berbagai tujuan populer dengan keberangkatan dari Cirebon, Jabodetabek, hingga kota-kota besar di Jawa.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Route Card -->
-                    <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">✈️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Bandara Soekarno-Hatta</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Route Cards -->
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/67E8F9/1E293B?text=Soetta&font=playpen-sans" alt="Bandara Soekarno-Hatta" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">✈️ Bandara Soetta</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Bandara Soekarno-Hatta')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Bandara%20Soekarno-Hatta" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0891B2/FFFFFF?text=Jakarta&font=playpen-sans" alt="Jakarta" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏙️ Jakarta</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏙️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Jakarta</p>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0E7490/FFFFFF?text=Tangerang&font=playpen-sans" alt="Tangerang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏢 Tangerang</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Jakarta')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Jakarta" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/155E75/FFFFFF?text=Depok&font=playpen-sans" alt="Depok" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏘️ Depok</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏢</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Tangerang</p>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0E7490/FFFFFF?text=Bogor&font=playpen-sans" alt="Bogor" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🌳 Bogor</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Tangerang')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Tangerang" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/155E75/FFFFFF?text=Bekasi&font=playpen-sans" alt="Bekasi" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏟️ Bekasi</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏘️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Depok</p>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0891B2/FFFFFF?text=Karawang&font=playpen-sans" alt="Karawang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏭 Karawang</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Depok')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Depok" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0E7490/FFFFFF?text=Cikarang&font=playpen-sans" alt="Cikarang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏭 Cikarang</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🌳</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Bogor</p>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/155E75/FFFFFF?text=Cakung&font=playpen-sans" alt="Cakung" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏗️ Cakung</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Bogor')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Bogor" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0891B2/FFFFFF?text=Pulogadung&font=playpen-sans" alt="Pulogadung" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🚌 Pulogadung</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏭</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Karawang</p>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0E7490/FFFFFF?text=Tanjung+Priok&font=playpen-sans" alt="Tanjung Priok" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🚢 Tanjung Priok</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Karawang')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Karawang" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/155E75/FFFFFF?text=Muara+Angke&font=playpen-sans" alt="Muara Angke" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🐟 Muara Angke</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏭</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Cikarang</p>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0891B2/FFFFFF?text=Serang&font=playpen-sans" alt="Serang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">🏯 Serang</h3>
                         </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Cikarang')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Cikarang" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
+                    </a>
+                    <a href="#kontak" class="scroll-animate group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:shadow-xl transition-all duration-300 block aspect-[4/3]">
+                        <img src="https://placehold.co/400x300/0E7490/FFFFFF?text=Bandung&font=playpen-sans" alt="Bandung" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-lg font-bold text-white font-brand">⛰️ Bandung</h3>
                         </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏗️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Cakung</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Cakung')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Cakung" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏟️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Bekasi</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Bekasi')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Bekasi" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🚌</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Pulogadung</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Pulogadung')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Pulogadung" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🚢</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Tanjung Priok</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Tanjung Priok')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Tanjung%20Priok" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🐟</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Muara Angke</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Muara Angke')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Muara%20Angke" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">🏯</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Serang</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Serang')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Serang" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                     <div class="scroll-animate group bg-white rounded-2xl shadow-sm transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 overflow-hidden">
-                        <div class="p-5 flex items-center space-x-4">
-                            <div class="text-4xl shrink-0">⛰️</div>
-                            <p class="font-bold text-gray-800 flex-grow">Cirebon → Bandung</p>
-                        </div>
-                        <div class="px-5 pb-4 flex items-center justify-end space-x-2">
-                            <button onclick="getTripIdeas('Bandung')" class="bg-purple-100 text-purple-700 text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-200">
-                                ✨ Dapatkan Ide
-                            </button>
-                            <a href="https://wa.me/62882001753186?text=Halo%20Abiem%20Trans,%20saya%20tertarik%20untuk%20memesan%20perjalanan%20ke%20Bandung" target="_blank" class="bg-pink-500 text-white text-xs font-bold px-4 py-2 rounded-full transition-all duration-300 hover:bg-pink-600">
-                                Pesan
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Special CTA Card -->
-                    <a href="#kontak" class="scroll-animate group bg-amber-400 p-4 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105">
-                        <div class="mb-2">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.546-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <span class="font-bold">Tujuan Lain?</span>
-                        <p class="text-sm font-medium">Tanyakan pada kami!</p>
+                    </a>
+                     <a href="#kontak" class="scroll-animate group bg-amber-300 rounded-2xl shadow-lg hover:shadow-amber-500/20 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center text-amber-800 p-4 aspect-[4/3]">
+                        <div class="text-4xl mb-2 transition-transform duration-300 group-hover:scale-110">🗺️</div>
+                        <h3 class="text-xl font-bold font-brand">Tujuan Lain?</h3>
+                        <p class="mt-1 text-sm font-medium">Tanyakan Saja!</p>
                     </a>
                 </div>
+                 <p class="text-center mt-8 text-slate-500">Kami juga melayani rute ke kota besar lain seperti <strong>Yogyakarta</strong> & <strong>Semarang</strong>. Hubungi kami untuk info lebih lanjut!</p>
             </div>
         </section>
         
         <!-- Kontak Section -->
-        <section id="kontak" class="py-20 bg-purple-50 overflow-hidden">
+        <section id="kontak" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 lg:p-16">
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <!-- Text Content -->
+                <div class="bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-3xl shadow-2xl shadow-cyan-500/30 p-8 md:p-12 lg:p-16">
+                     <div class="grid md:grid-cols-2 gap-12 items-center">
                         <div class="text-center md:text-left">
-                            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
-                                Tunggu apa lagi? <span class="text-purple-600">Yuk, berangkat!</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white">
+                                Tunggu apa lagi? <span class="font-brand">Yuk, berangkat!</span>
                             </h2>
-                            <p class="mt-4 text-gray-600">
+                            <p class="mt-4 text-cyan-100">
                                 Punya pertanyaan atau sudah siap memesan tiket petualanganmu? Tim kami siap sedia membantu. Cukup klik tombol di bawah ini!
                             </p>
                             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                <a href="https://wa.link/w0jfqg" target="_blank" class="w-full sm:w-auto bg-green-500 text-white font-bold px-6 py-3 rounded-full text-lg shadow-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 16 16">
-                                       <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                                     </svg>
+                                <a href="https://wa.me/6283866624406" target="_blank" class="w-full sm:w-auto bg-white text-cyan-600 font-bold px-6 py-3 rounded-full text-lg shadow-lg hover:bg-cyan-50 transform hover:scale-105 transition duration-300 flex items-center justify-center">
+                                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
                                     Chat di WhatsApp
-                                </a>
-                                <a href="mailto:abiemnie63@gmail.com" class="w-full sm:w-auto bg-gray-800 text-white font-bold px-6 py-3 rounded-full text-lg shadow-lg hover:bg-gray-900 transform hover:scale-105 transition duration-300 flex items-center justify-center">
-                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                    </svg>
-                                    Kirim Email
                                 </a>
                             </div>
                         </div>
-                        <!-- Illustration -->
-                        <div class="hidden md:block">
-                            <svg class="w-full h-auto" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#F3E8FF" d="M0 150h500v200H0z"/>
-                                    <path d="M-38 315.655C124.333 293.488 282.333 282.322 436 282.322c153.667 0 300.667 11.166 441 33.333v34.345H-38v-34.345z" fill="#FAF5FF"/>
-                                    <g transform="translate(100 80)" id="animated-van">
-                                        <path d="M259.53 103.654H84.582c-6.17 0-11.455-4.63-12.06-10.764l-11.38-113.827C60.52 72.04 65.52 66.667 72.1 66.667h175.8c6.58 0 11.58 5.373 10.96 12.387l-11.38 113.827c-.606 6.133-5.89 10.764-12.06 10.764h4.11z" fill="#9333EA"/>
-                                        <path d="M248.15 192.667H72.1c-6.58 0-11.58-5.373-10.96-12.386L72.52 66.454c.605-6.133 5.89-10.764 12.06-10.764h175.25c6.17 0 11.455 4.63 12.06 10.764l11.38 113.827c.62 7.014-4.38 12.386-10.96 12.386h-24.1z" fill="#A855F7"/>
-                                        <rect fill="#FFFFFF" x="87" y="78" width="160" height="50" rx="5"/>
-                                        <g class="animated-wheel" style="transform-origin: 218.5px 199.5px;">
-                                            <circle fill="#F9FAFB" cx="218.5" cy="199.5" r="28.5"/>
-                                            <circle fill="#1F2937" cx="218.5" cy="199.5" r="14.5"/>
-                                        </g>
-                                        <g class="animated-wheel" style="transform-origin: 53.5px 199.5px;">
-                                            <circle fill="#F9FAFB" cx="53.5" cy="199.5" r="28.5"/>
-                                            <circle fill="#1F2937" cx="53.5" cy="199.5" r="14.5"/>
-                                        </g>
-                                        <path d="M19 193h-6c-2.21 0-4-1.79-4-4v-26c0-2.21 1.79-4 4-4h6c2.21 0 4 1.79 4 4v26c0 2.21-1.79 4-4 4z" fill="#9333EA"/>
-                                        <rect fill="#F472B6" x="250" y="86" width="10" height="20" rx="5"/>
-                                    </g>
-                                    <g transform="translate(300 10)" id="animated-sun">
-                                      <path d="M49.632 98.243c-6.83-5.303-11.23-13.6-11.23-22.924 0-15.82 12.825-28.645 28.646-28.645s28.645 12.824 28.645 28.645c0 9.325-4.4 17.62-11.23 22.924-11.516 8.94-25.996 8.94-37.513 0z" fill="#FBCFE8"/>
-                                      <path d="M66.95 46.674c-11.378-11.377-29.823-11.377-41.2 0-11.378 11.377-11.378 29.823 0 41.2l20.6 20.6 20.6-20.6c11.378-11.377 11.378-29.823 0-41.2z" fill="#F9A8D4" opacity=".5"/>
-                                    </g>
-                                </g>
-                            </svg>
+                        <div class="hidden md:flex items-center justify-center">
+                           <svg class="w-full h-auto max-w-xs text-white" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M47.3,-67.3C61.8,-57.4,74.5,-44.2,79.5,-29.2C84.5,-14.2,81.8,2.7,75.3,17.2C68.9,31.7,58.7,43.9,46.5,55.2C34.3,66.5,20.1,77,4.3,78.5C-11.4,80,-22.8,72.5,-35.8,64.8C-48.7,57.1,-63.2,49.2,-71.4,37.3C-79.6,25.4,-81.5,9.5,-77.3,-4.2C-73.1,-17.9,-62.8,-29.4,-51.9,-39.3C-41,-49.2,-29.5,-57.5,-16.8,-64.7C-4.1,-71.9,9.8,-78.1,24.1,-79.1C38.4,-80.1,52.8,-77.1,47.3,-67.3Z" transform="translate(100 100)"/></svg>
                         </div>
                     </div>
                 </div>
@@ -677,261 +467,117 @@
     </main>
     
     <!-- AI Assistant FAB -->
-    <button onclick="showAssistantModal()" class="fixed bottom-6 right-6 bg-purple-600 text-white p-4 rounded-full shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-transform transform hover:scale-110 z-50">
+    <button onclick="showAssistantModal()" class="fixed bottom-6 right-6 bg-cyan-600 text-white p-4 rounded-full shadow-lg hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-transform transform hover:scale-110 z-50">
         <span class="absolute -top-1 -right-1 flex h-5 w-5">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-5 w-5 bg-pink-400 items-center justify-center text-purple-800 text-xs font-bold">✨</span>
+            <span class="relative inline-flex rounded-full h-5 w-5 bg-pink-400 items-center justify-center text-cyan-800 text-xs font-bold">AI</span>
         </span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
     </button>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white relative">
-        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-            <svg class="relative block w-[calc(100%+1.3px)] h-[90px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-current text-gray-800"></path>
-            </svg>
-        </div>
-        <div class="container mx-auto px-6 pt-24 pb-12">
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-12">
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- About Column -->
                 <div>
-                     <a href="#" class="flex items-center space-x-2 mb-4">
-                        <svg class="h-10 w-10" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <circle fill="#FFF" cx="32" cy="32" r="32"/>
-                                <path d="M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z" fill="#9333EA"/>
-                                <path d="M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z" fill="#E9D5FF"/>
-                                <rect fill="#FFF" x="18" y="16" width="28" height="8" rx="2"/>
-                                <circle fill="#1F2937" cx="20" cy="42" r="6"/>
-                                <circle fill="#FFF" cx="20" cy="42" r="2"/>
-                                <circle fill="#1F2937" cx="44" cy="42" r="6"/>
-                                <circle fill="#FFF" cx="44" cy="42" r="2"/>
-                                <path d="M30 32c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zM22 32c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z" fill="#FFF"/>
-                                <path d="M38 34c-1.33 0-2.5.84-2.9 2h-6.2c-.4-1.16-1.57-2-2.9-2-1.66 0-3 1.34-3 3s1.34 3 3 3h12c1.66 0 3-1.34 3-3s-1.34-3-3-3z" fill="#FFF" fill-rule="nonzero"/>
-                            </g>
-                        </svg>
-                        <span class="text-xl font-bold text-white">Abiem Trans</span>
+                    <a href="#" class="flex items-center space-x-2 mb-4">
+                        <svg class="h-10 w-10" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FFF" cx="32" cy="32" r="32"/><path d="M50 42H14c-1.1 0-2-.9-2-2v-8c0-4.42 3.58-8 8-8h20c4.42 0 8 3.58 8 8v8c0 1.1-.9 2-2 2z" fill="#0891B2"/><path d="M44 24h-24c-2.21 0-4-1.79-4-4v-2c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v2c0 2.21-1.79 4-4 4z" fill="#A5F3FC"/><rect fill="#FFF" x="18" y="16" width="28" height="8" rx="2"/><circle fill="#1F2937" cx="20" cy="42" r="6"/><circle fill="#FFF" cx="20" cy="42" r="2"/><circle fill="#1F2937" cx="44" cy="42" r="6"/><circle fill="#FFF" cx="44" cy="42" r="2"/></g></svg>
+                        <span class="text-xl font-bold text-white font-brand">Abiem Trans</span>
                     </a>
-                    <p class="text-gray-400">Teman perjalanan terbaikmu untuk petualangan yang seru, aman, dan tak terlupakan. Kami siap mengantar ke mana saja hatimu ingin pergi.</p>
+                    <p class="text-slate-400">Teman perjalanan terbaikmu untuk petualangan yang seru, aman, dan tak terlupakan.</p>
                 </div>
-                <!-- Links Column -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Navigasi Cepat</h3>
+                    <h3 class="text-lg font-bold mb-4">Navigasi Cepat</h3>
                     <ul class="space-y-2">
-                        <li><a href="#tentang" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
-                        <li><a href="#layanan" class="text-gray-400 hover:text-white transition">Layanan</a></li>
-                        <li><a href="#armada" class="text-gray-400 hover:text-white transition">Armada</a></li>
-                        <li><a href="#rute" class="text-gray-400 hover:text-white transition">Rute Populer</a></li>
+                        <li><a href="#tentang" class="text-slate-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="text-slate-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="#armada" class="text-slate-400 hover:text-white transition">Armada</a></li>
+                        <li><a href="#rute" class="text-slate-400 hover:text-white transition">Rute Populer</a></li>
                     </ul>
                 </div>
-                <!-- Contact Column -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Butuh Bantuan?</h3>
-                    <ul class="space-y-2 text-gray-400">
+                    <h3 class="text-lg font-bold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2 text-slate-400">
                         <li><span class="font-semibold text-white">Email:</span> abiemnie63@gmail.com</li>
-                        <li><span class="font-semibold text-white">Telepon/WA:</span>0882001753186</li>
-                        <li class="flex items-start">
-                            <span class="font-semibold text-white mr-2 shrink-0">Alamat:</span>
-                            <span>Dusun Pangadangan, RT 12/05, Desa Rancasari, Kec. Pamanukan, Kab. Subang</span>
-                        </li>
+                        <li><span class="font-semibold text-white">WA:</span> 083866624406</li>
+                         <li><span class="font-semibold text-white">Alamat:</span> Dusun Pangadangan, RT 12/05, Desa Rancasari, Kec. Pamanukan, Kab. Subang</li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
-                 <div class="flex justify-center space-x-6 mb-4">
-                    <!-- TikTok -->
-                    <a href="https://www.tiktok.com/@abiem.trans?_t=ZS-8zRM8j2Bbt7&_r=1"target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition" aria-label="TikTok">
-                        <img src="https://static.vecteezy.com/system/resources/previews/023/986/921/original/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png" class="w-8 h-8" alt="TikTok">
-                    </a>
-                     <!-- You can add other social icons here -->
-                </div>
-                <p>&copy; 2024 Abiem Trans. Dibuat dengan ☕ dan secuil kode ajaib.</p>
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-slate-500">
+                <p>&copy; 2024 Abiem Trans. Dibuat dengan ☕ dan sentuhan modern.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Gemini Modal -->
+    <!-- Gemini Modal (Sama seperti sebelumnya, hanya styling warna yang disesuaikan) -->
     <div id="gemini-modal" class="fixed inset-0 bg-black bg-opacity-60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
         <div class="bg-white rounded-2xl shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col transform transition-all" id="gemini-modal-content">
-            <!-- Header -->
             <div class="p-6 border-b shrink-0">
                 <div class="flex justify-between items-center">
-                    <h3 id="modal-title" class="text-xl md:text-2xl font-bold text-gray-800 flex items-center">
-                        <!-- Title will be set by JS -->
-                    </h3>
-                    <button onclick="hideModal()" class="text-gray-400 hover:text-gray-800 transition-colors rounded-full p-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
+                    <h3 id="modal-title" class="text-xl md:text-2xl font-bold text-slate-800 flex items-center"></h3>
+                    <button onclick="hideModal()" class="text-slate-400 hover:text-slate-800 transition-colors rounded-full p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                 </div>
             </div>
-            <!-- Content -->
             <div class="p-6 overflow-y-auto">
                 <div id="modal-loader" class="text-center py-8 hidden">
-                     <div class="flex justify-center items-center space-x-2">
-                        <div class="w-4 h-4 rounded-full bg-purple-500 animate-pulse"></div>
-                        <div class="w-4 h-4 rounded-full bg-purple-500 animate-pulse" style="animation-delay: 0.2s;"></div>
-                        <div class="w-4 h-4 rounded-full bg-purple-500 animate-pulse" style="animation-delay: 0.4s;"></div>
+                    <div class="flex justify-center items-center space-x-2">
+                        <div class="w-4 h-4 rounded-full bg-cyan-500 animate-pulse"></div>
+                        <div class="w-4 h-4 rounded-full bg-cyan-500 animate-pulse" style="animation-delay: 0.2s;"></div>
+                        <div class="w-4 h-4 rounded-full bg-cyan-500 animate-pulse" style="animation-delay: 0.4s;"></div>
                     </div>
-                    <p class="mt-4 text-gray-600">Sedang bertanya pada AI... 🤖</p>
+                    <p class="mt-4 text-slate-600">Sedang bertanya pada AI... 🤖</p>
                 </div>
-                <div id="modal-result" class="text-gray-700 prose max-w-none"></div>
-                <!-- AI Assistant Input Area -->
+                <div id="modal-result" class="text-slate-700 prose max-w-none"></div>
                 <div id="assistant-input-area" class="hidden">
-                     <div class="mt-4">
-                        <textarea id="assistant-question" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" rows="3" placeholder="Contoh: Apakah bisa sewa mobil untuk ke luar kota?"></textarea>
-                        <button onclick="submitAssistantQuestion()" id="assistant-submit-button" class="mt-4 w-full bg-purple-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-purple-600 transition">
-                            Tanyakan pada AI
-                        </button>
+                    <div class="mt-4">
+                        <textarea id="assistant-question" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-cyan-500 focus:border-cyan-500" rows="3" placeholder="Contoh: Apakah bisa sewa mobil untuk ke luar kota?"></textarea>
+                        <button onclick="submitAssistantQuestion()" id="assistant-submit-button" class="mt-4 w-full bg-cyan-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-cyan-600 transition">Tanyakan pada AI</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Three.js 3D Background - Particle System
-        let scene, camera, renderer, particles, clock, mouse;
-
-        function init3D() {
-            const canvas = document.querySelector('#hero-canvas');
-            const container = canvas.parentElement;
-
-            scene = new THREE.Scene();
-            clock = new THREE.Clock();
-            mouse = new THREE.Vector2();
-
-            camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-            camera.position.z = 2.5;
-
-            renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
-            renderer.setSize(container.offsetWidth, container.offsetHeight);
-            renderer.setPixelRatio(window.devicePixelRatio);
-
-            const particleCount = 5000;
-            const positions = new Float32Array(particleCount * 3);
-            
-            for (let i = 0; i < particleCount; i++) {
-                const i3 = i * 3;
-                positions[i3] = (Math.random() - 0.5) * 10;
-                positions[i3 + 1] = (Math.random() - 0.5) * 10;
-                positions[i3 + 2] = (Math.random() - 0.5) * 10;
-            }
-
-            const particlesGeometry = new THREE.BufferGeometry();
-            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-
-            const particlesMaterial = new THREE.PointsMaterial({
-                color: 0x9333EA, // Purple-600
-                size: 0.03,
-                transparent: true,
-                blending: THREE.AdditiveBlending,
-                sizeAttenuation: true
+        // --- SCRIPT UTAMA ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
 
-            particles = new THREE.Points(particlesGeometry, particlesMaterial);
-            scene.add(particles);
-
-            window.addEventListener('resize', onWindowResize, false);
-            document.addEventListener('mousemove', onMouseMove, false);
-            
-            animate();
-        }
-
-        function onWindowResize() {
-            const container = document.querySelector('.hero-bg');
-            camera.aspect = container.offsetWidth / container.offsetHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(container.offsetWidth, container.offsetHeight);
-        }
-
-        function onMouseMove(event) {
-            // Normalize mouse position from -1 to +1
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-        }
-
-        function animate() {
-            requestAnimationFrame(animate);
-            const elapsedTime = clock.getElapsedTime();
-
-            // Animate particles for a swirling effect
-            particles.rotation.y = elapsedTime * 0.05;
-
-            // Make camera react to mouse for a parallax effect
-            const parallaxX = mouse.x * 0.5;
-            const parallaxY = -mouse.y * 0.5;
-            camera.position.x += (parallaxX - camera.position.x) * 0.02;
-            camera.position.y += (parallaxY - camera.position.y) * 0.02;
-            camera.lookAt(scene.position);
-
-            renderer.render(scene, camera);
-        }
-
-        init3D();
-
-
-        // Animation on scroll for multiple sections
-        const scrollElements = document.querySelectorAll('.scroll-animate, .gallery-image');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const delay = (entry.target.dataset.delay || 0) * 100;
-                    setTimeout(() => {
+            // Animation on scroll
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                    }, delay); 
-                    observer.unobserve(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            scrollElements.forEach(el => observer.observe(el));
+
+             // --- SCRIPT ANTI-COPY-PASTE ---
+            document.addEventListener('keydown', function(event) {
+                const target = event.target;
+                const isInput = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA';
+                if (event.key === 'F12') { event.preventDefault(); }
+                if (event.ctrlKey) {
+                    const key = event.key.toLowerCase();
+                    if (['c', 'u', 's'].includes(key)) { if (key === 'c' && isInput) { return; } event.preventDefault(); }
+                    if (key === 'a') { if (isInput) { return; } event.preventDefault(); }
+                    if (event.shiftKey && ['i', 'j', 'c'].includes(key)) { event.preventDefault(); }
                 }
             });
-        }, { threshold: 0.1 });
-
-        scrollElements.forEach((el, index) => {
-            el.dataset.delay = index % 5; // Stagger effect for up to 5 items in a row
-            observer.observe(el);
         });
 
-        // Service Tabs Logic
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabPanels = document.querySelectorAll('.tab-panel');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const targetTab = button.dataset.tab;
-
-                // Deactivate all buttons
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('bg-white', 'text-purple-600');
-                    btn.classList.add('text-gray-600');
-                });
-
-                // Activate clicked button
-                button.classList.add('bg-white', 'text-purple-600');
-                button.classList.remove('text-gray-600');
-
-                // Hide all panels
-                tabPanels.forEach(panel => {
-                    panel.classList.add('hidden');
-                });
-
-                // Show target panel
-                document.getElementById(`tab-${targetTab}`).classList.remove('hidden');
-            });
-        });
-
-
-        // Gemini API Feature
+        // --- SCRIPT MODAL & AI ---
         const modal = document.getElementById('gemini-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalLoader = document.getElementById('modal-loader');
@@ -950,82 +596,43 @@
             modal.classList.remove('flex');
         }
 
+        // Dummy function to simulate API call since we can't use the netlify function here
         async function callGemini(prompt) {
-            const encodedApiKey = "QUl6YVN5QUVYeFFiZW1iQnlPNzRWUWViN0NHb3FWTlBubzhuNDd3";
-            const apiKey = atob(encodedApiKey);
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-            const payload = {
-                contents: [{ parts: [{ text: prompt }] }],
-            };
-
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const result = await response.json();
-                const candidate = result.candidates?.[0];
-
-                if (candidate && candidate.content?.parts?.[0]?.text) {
-                    let text = candidate.content.parts[0].text;
-                    
-                    // Improved Markdown to HTML conversion to handle paragraphs and lists
-                    text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Bold
-                    const lines = text.split('\n').filter(line => line.trim() !== '');
-                    let isList = false;
-                    let html = '';
-                    lines.forEach(line => {
-                        const trimmedLine = line.trim();
-                        if (trimmedLine.startsWith('* ')) {
-                            if (!isList) {
-                                html += '<ul>';
-                                isList = true;
-                            }
-                            html += `<li>${trimmedLine.substring(2)}</li>`; // Remove '* '
-                        } else {
-                            if (isList) {
-                                html += '</ul>';
-                                isList = false;
-                            }
-                            html += `<p>${trimmedLine}</p>`;
-                        }
-                    });
-                    if (isList) {
-                        html += '</ul>';
+             return new Promise(resolve => {
+                setTimeout(() => {
+                    // Simple logic for demonstration
+                    if (prompt.includes("aktivitas wisata")) {
+                        resolve(`
+                            Tentu, ini dia beberapa ide seru!
+                            <ul>
+                                <li><strong>Wisata Kuliner Tersembunyi:</strong> Cicipi makanan lokal otentik di tempat yang jarang diketahui turis.</li>
+                                <li><strong>Workshop Kerajinan Tangan:</strong> Belajar membuat batik atau kerajinan lokal lainnya langsung dari ahlinya.</li>
+                                <li><strong>Menyusuri Sungai:</strong> Nikmati pemandangan alam yang indah dari perahu sambil bersantai.</li>
+                                <li><strong>Berburu Foto di Spot Instagramable:</strong> Kami tahu tempat-tempat rahasia dengan pemandangan menakjubkan.</li>
+                                <li><strong>Petualangan Alam:</strong> Jelajahi air terjun tersembunyi atau trekking ringan di perbukitan sekitar.</li>
+                            </ul>
+                        `);
+                    } else {
+                         resolve(`
+                            <p>Tentu, saya bisa bantu! Berdasarkan informasi kami:</p>
+                            <ul>
+                                <li>Untuk sewa mobil ke luar kota, kami menyediakan layanan <strong>Carter Drop</strong> (satu arah) atau <strong>Carter PP</strong> (pulang-pergi).</li>
+                                <li>Anda bisa memilih armada sesuai kebutuhan, mulai dari Avanza hingga Elf Long.</li>
+                                <li>Untuk pemesanan dan info harga detail, silakan langsung hubungi kami via WhatsApp di <strong>083866624406</strong> ya!</li>
+                            </ul>
+                         `);
                     }
-                    return html;
-
-                } else {
-                    return '<p>Maaf, AI tidak bisa memberikan jawaban saat ini. Coba lagi nanti ya.</p>';
-                }
-
-            } catch (error) {
-                console.error("Error calling Gemini API:", error);
-                return `<p class="text-red-500">Oops! Terjadi kesalahan saat menghubungi AI. Silakan coba lagi. Error: ${error.message}</p>`;
-            }
+                }, 1500); // Simulate network delay
+            });
         }
-
+        
         async function getTripIdeas(destination) {
             showModal();
-            modalTitle.innerHTML = `<span class="text-pink-500 mr-2">✨</span> Ide Aktivitas di <span class="ml-2 text-purple-600">${destination}</span>`;
+            modalTitle.innerHTML = `<span class="text-pink-500 mr-2">✨</span> Ide Aktivitas di <span class="ml-2 text-cyan-600">${destination}</span>`;
             assistantInputArea.classList.add('hidden');
             modalResult.innerHTML = '';
             modalLoader.classList.remove('hidden');
-            
-            let finalDestination = destination;
-            if (destination.toLowerCase().includes('bandara')) {
-                finalDestination = 'area sekitar Jakarta dan Tangerang';
-            }
-
-            const prompt = `Sebagai seorang pemandu wisata lokal yang ramah, berikan 5 ide aktivitas wisata yang seru dan unik di ${finalDestination}, Indonesia. Hindari hal-hal yang terlalu umum. Buat dalam format daftar markdown (menggunakan * ) dengan judul yang di-bold (menggunakan **judul**) dan deskripsi singkat yang menarik untuk setiap poin. Jawab dalam Bahasa Indonesia.`;
-
+            const prompt = `Berikan ide aktivitas wisata di ${destination}`;
             const resultHtml = await callGemini(prompt);
             modalResult.innerHTML = resultHtml;
             modalLoader.classList.add('hidden');
@@ -1033,7 +640,7 @@
 
         function showAssistantModal() {
             showModal();
-            modalTitle.innerHTML = `<span class="text-purple-500 mr-2">🤖</span> Asisten AI Abiem Trans`;
+            modalTitle.innerHTML = `<span class="text-cyan-500 mr-2">🤖</span> Asisten AI Abiem Trans`;
             modalLoader.classList.add('hidden');
             modalResult.innerHTML = '<p>Halo! Ada yang bisa saya bantu? Tanyakan apa saja tentang layanan Abiem Trans.</p>';
             assistantInputArea.classList.remove('hidden');
@@ -1052,26 +659,11 @@
             submitButton.disabled = true;
             submitButton.innerHTML = 'AI sedang berpikir...';
             
-            modalResult.innerHTML += `<hr class="my-4"><div class="p-4 bg-gray-100 rounded-lg"><p class="font-semibold">Anda:</p><p>${question}</p></div>`;
+            modalResult.innerHTML += `<hr class="my-4"><div class="p-4 bg-slate-100 rounded-lg"><p class="font-semibold">Anda:</p><p>${question}</p></div>`;
             modalResult.parentElement.scrollTop = modalResult.parentElement.scrollHeight;
             modalLoader.classList.remove('hidden');
 
-            const context = `
-                Anda adalah asisten AI yang ramah untuk Abiem Trans, sebuah agen travel.
-                Informasi tentang Abiem Trans:
-                - Nama Bisnis: Abiem Trans
-                - Kontak: Email abiemnie63@gmail.com, WA 0882001753186
-                - Layanan Utama: Antar jemput door-to-door, harga terjangkau, armada nyaman, driver profesional.
-                - Layanan Tambahan: Carter drop, carter PP, pariwisata, ziarah, tour.
-                - Armada & Harga per hari: Avanza/Xenia (5-6 orang, Rp600rb), Innova Reborn (6-7 orang, Rp850rb), Toyota Hiace (10-12 orang, Rp1,2jt), Elf Long (12-15 orang, Rp1,5jt).
-                - Rute Populer dari Cirebon: Bandara Soekarno-Hatta, Jakarta, Tangerang, Depok, Bogor, Karawang, Cikarang, Cakung, Bekasi, Pulogadung, Tanjung Priok, Muara Angke, Serang, Bandung.
-                - Misi: Membuat perjalanan seru, nyaman, dan tak terlupakan.
-                
-                Tugas Anda: Jawab pertanyaan pelanggan dengan ramah, singkat, dan informatif berdasarkan konteks di atas. Jika Anda tidak tahu jawabannya atau pertanyaannya di luar konteks, sarankan pelanggan untuk menghubungi kontak resmi Abiem Trans. Selalu jawab dalam Bahasa Indonesia.
-            `;
-            const prompt = `${context}\n\nPertanyaan Pelanggan: "${question}"\n\nJawaban Anda:`;
-
-            const resultHtml = await callGemini(prompt);
+            const resultHtml = await callGemini(question);
             modalLoader.classList.add('hidden');
             modalResult.innerHTML += `<div class="mt-4"><p class="font-semibold">Asisten AI:</p>${resultHtml}</div>`;
             
@@ -1081,20 +673,9 @@
             modalResult.parentElement.scrollTop = modalResult.parentElement.scrollHeight;
         }
 
-
-        // Close modal on outside click
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                hideModal();
-            }
-        });
-
-        // Close modal on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Escape") {
-                hideModal();
-            }
-        });
+        // Modal event listeners
+        modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === "Escape") hideModal(); });
 
     </script>
 
